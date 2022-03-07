@@ -1,3 +1,8 @@
+PATH
+  remote: ../bubbler_ruby
+  specs:
+    bubbler (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -131,6 +136,8 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.3-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.3-x86_64-darwin)
       racc (~> 1.4)
     public_suffix (4.0.6)
@@ -218,10 +225,12 @@ GEM
     zeitwerk (2.5.4)
 
 PLATFORMS
+  arm64-darwin-21
   x86_64-darwin-21
 
 DEPENDENCIES
   bootsnap
+  bubbler!
   capybara
   debug
   importmap-rails
