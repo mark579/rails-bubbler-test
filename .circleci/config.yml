@@ -10,6 +10,12 @@ defaults: &defaults
         BUNDLE_JOBS: 4
         BUNDLE_RETRY: 3
         RAILS_ENV: test
+
+workflows:
+  test_workflow:
+    jobs:
+      - test
+
 jobs:
   test:
     <<: *defaults
@@ -30,9 +36,4 @@ jobs:
         paths:
           - vendor/bundle
       - run: bundle exec rake test
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
-workflows:
-  test-workflow:
-    jobs:
-      - test
+
