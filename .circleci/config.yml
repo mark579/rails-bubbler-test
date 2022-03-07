@@ -26,6 +26,5 @@ jobs:
     steps:
       - checkout
       - ruby/install-deps
-      - run: echo "This is teh job"
       - run: bundle exec rake test
 
