@@ -27,5 +27,6 @@ jobs:
       - checkout
       - ruby/install-deps
       - run: env
-      - run: bundle exec rake test
+      - run: bundle exec rails test
+      - run: bundle exec bubbler:upload
 
