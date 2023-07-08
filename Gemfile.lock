@@ -1,3 +1,8 @@
+PATH
+  remote: ../bubbler_ruby
+  specs:
+    bubbler_ruby (0.1.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -71,7 +76,6 @@ GEM
     bindex (0.8.1)
     bootsnap (1.10.3)
       msgpack (~> 1.2)
-    bubbler_ruby (0.1.1)
     builder (3.2.4)
     capybara (3.36.0)
       addressable
@@ -227,7 +231,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  bubbler_ruby
+  bubbler_ruby!
   capybara
   debug
   importmap-rails
