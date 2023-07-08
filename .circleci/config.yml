@@ -28,5 +28,5 @@ jobs:
       - ruby/install-deps
       - run: env
       - run: bundle exec rails test
-      - run: bundle exec bubbler:upload
+      - run: bundle exec rails bubbler:upload
 
