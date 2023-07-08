@@ -1,5 +1,6 @@
-PATH
-  remote: ../bubbler_ruby
+GIT
+  remote: https://github.com/mark579/bubbler_ruby.git
+  revision: 96f231a51e9aae7861462be9e59e44b120ce6ee6
   specs:
     bubbler (0.1.0)
 
@@ -226,6 +227,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  arm64-darwin-22
   x86_64-darwin-21
 
 DEPENDENCIES
